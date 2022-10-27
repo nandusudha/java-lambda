@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.example</groupId>
-	<artifactId>bermtec</artifactId>
-	<version>1.0.1</version>
-	<name>bermtec</name>
+	<artifactId>Narmada</artifactId>
+	<version>3.0.1</version>
+	<name>Narmada</name>
 	<packaging>jar</packaging>
-	<description>bermtec 2022 with Spring Boot</description>
+	<description>Narmada 2022 with Spring Boot</description>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
