@@ -13,7 +13,7 @@ pipeline {
 
     environment {
         PATH = "/usr/local/apache-maven/apache-maven-3.8.6/apache-maven-3.8.6/bin:$PATH"
-        AWS_ACCESS_KEY = credentials('Narmada')
+        AWS_ACCESS_KEY = credentials('jenkins')
         AWS_SECRET_KEY = credentials('Narmadasonarqube')
         ARTIFACTID = readMavenPom().getArtifactId()
         VERSION = readMavenPom().getVersion()
@@ -57,7 +57,7 @@ pipeline {
 
                     sh 'aws configure set aws_access_key_id $AWS_ACCESS_KEY'
                     sh 'aws configure set aws_secret_access_key $AWS_SECRET_KEY'
-                    sh 'aws configure set region us-west-1c' 
+                    sh 'aws configure set region us-east-1' 
                     sh "aws s3 cp target/${JARNAME} s3://narmadas3bucket/s3test/"
 
 
