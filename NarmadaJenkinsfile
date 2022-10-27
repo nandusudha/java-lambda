@@ -95,7 +95,7 @@ pipeline {
                         sh "aws s3 cp target/${JARNAME} s3://narmadas3bucket/s3prod/"
                         //  sh './deploy-test.sh $AWS_ACCESS_KEY $AWS_SECRET_KEY'
                         // if (does_lambda_exist('lambdaprod')) {
-                            sh "aws lambda update-function-code --function-name lambdaprod --s3-bucket narmadas3bucket --s3-key s3prod/${JARNAME}"
+                            sh "aws lambda update-function-code --function-name Lambdaprod --s3-bucket narmadas3bucket --s3-key s3prod/${JARNAME}"
                         //}  
                     }
                 }
