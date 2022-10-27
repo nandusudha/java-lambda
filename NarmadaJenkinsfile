@@ -104,7 +104,7 @@ pipeline {
 
     }
 
-    /* post {
+    post {
       failure {
         echo 'failed'
              mail to: 'nandusudha2303@gmail.com',
@@ -117,7 +117,7 @@ pipeline {
       aborted {
         echo 'aborted'
       }
-    } */
+    }
 }
 
 def does_lambda_exist(String name) {	
